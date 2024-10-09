@@ -1,0 +1,75 @@
+{
+    "email":"manpane98@gmail.com",
+    "password": "1234568---9"
+}
+
+
+
+/createBet- creates bet 
+    {
+        /submit: to submit the metadata of bet.
+        /exit: (to terminate the process) 
+        /add: (to specify what to add)
+        {
+            /icon - icon(required)
+            /title - title(required)
+            /description - description(required)
+            /start - start date(required)
+            /end - end date(required)
+            /minBet - min bet(required)
+            /maxBet - max bet(required)
+            /odds - odds(required)
+            /creator - creator(required)
+            /status - status(required)
+            
+            /link - for the amount if its dynamic
+            /button - for the user to pick sides 
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    msg {
+  update_id: 333555982,
+  message: {
+    message_id: 227,
+    from: {
+      id: 6741229382,
+      is_bot: false,
+      first_name: 'sayui',
+      language_code: 'en'
+    },
+    chat: { id: 6741229382, first_name: 'sayui', type: 'private' },
+    date: 1728294283,
+    text: '/createBet \n' +
+      '\n' +
+      '    image: https://example.com/chess-match.jpg\n' +
+      '    title: Hikaru Nakamura vs Hans Niemann\n' +
+      '    description: High-stakes chess match between Grandmasters Hikaru Nakamura and Hans Niemann\n' +
+      '    start: 2024-10-15T18:00:00Z\n' +
+      '    end: 2024-10-15T22:00:00Z\n' +
+      '    minBet: 0.1 SOL\n' +
+      '    maxBet: 10 SOL\n' +
+      '    odds: 1.5\n' +
+      '    status: upcoming\n' +
+      '    icon: https://example.com/chess-icon.png\n' +
+      '    creator: Samip Maharjan',
+    entities: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    link_preview_options: { is_disabled: true }
+  }
+}
