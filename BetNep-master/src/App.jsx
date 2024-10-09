@@ -6,10 +6,9 @@ import phoneImage from './phonee.png';
 
 function App() {
 
-  const Card = ({ title, description }) => {
+  const Card = ({description }) => {
     return (
       <div className="card">
-        <h2 className="card-title">{title}</h2>
         <p className="card-description">{description}</p>
         
       </div>
@@ -62,12 +61,12 @@ function App() {
 
       <section className="card-image-container">
         <div className="image-container">
-          <img src={phoneImage} alt="Phone" className="phone-image" /> {/* Update the image source */}
+          <img src={phoneImage} alt="Phone" className="phone-image" /> 
         </div>
         <div className="card-container">
-          <Card title="Feature 1" description="Description of feature 1" />
-          <Card title="Feature 2" description="Description of feature 2" />
-          <Card title="Feature 3" description="Description of feature 3" />
+          <Card description="Seamless creation of prediction market bets " />
+          <Card description="User friendly betting bot" />
+          {/* <Card description="Description of feature 3" /> */}
         </div>
       </section>
     </div>
